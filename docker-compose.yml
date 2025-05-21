@@ -1,5 +1,5 @@
 services:
-  pphp:
+  php:
     build: .
     container_name: esportify-php
     volumes:
