@@ -20,6 +20,7 @@ $latest_events = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 <div class="container my-5">
     <h1 class="mb-4">Welcome on <span class="text-primary">Esportify</span></h1>
+    <p class="lead">👋 This is a test Git</p>
 
     <?php if (isset($_SESSION['role'])): ?>
         <?php if ($_SESSION['role'] === 'joueur'): ?>
