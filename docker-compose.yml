@@ -1,0 +1,27 @@
+services:
+  pphp:
+    build: .
+    container_name: esportify-php
+    volumes:
+      - ./src:/var/www/html
+    ports:
+      - "8082:80"
+    depends_on:
+      - db
+
+  db:
+    image: mysql:8.0.41
+    container_name: esportify-db
+    restart: always
+    environment:
+      MYSQL_DATABASE: esportify_db
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: esport
+      MYSQL_PASSWORD: esport123
+    ports:
+      - "3307:3306"
+    volumes:
+      - db_data:/var/lib/mysql
+
+volumes:
+  db_data:

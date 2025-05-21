@@ -1,0 +1,79 @@
+/* RESET MARGINI */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Stile contenitore universale 
+.container, .card, .alert, .table {
+  background-color: rgba(255, 255, 255, 0.88);
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+*/
+
+/* SFONDI PERSONALIZZATI */
+body.body-home {
+  background: url('../img/home-bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+body.body-login {
+  background: url('../img/login-bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+body.body-register {
+  background: url('../img/register-bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+body.body-events {
+  background: url('../img/events-bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+body.body-events-details {
+  background: url('../img/events-details-bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+body.body-myaccount {
+  background: url('../img/myaccount-bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+body.body-summary {
+  background: url('../img/summary.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+body.body-info {
+  background: url('../img/info-bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Sovrapposizione semi-trasparente */
+body::before {
+  content: "";
+  background-color: rgba(255, 255, 255, 0.75); /* Velo bianco 75% */
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  transition: all 0.3s ease-in-out;
+}
+
+.card img {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.user-greeting {
+  color: lightblue;
+  font-weight: bold;
+}
