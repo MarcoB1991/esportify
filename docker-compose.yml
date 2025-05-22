@@ -2,10 +2,11 @@ services:
   php:
     build: .
     container_name: esportify-php
+    dockerfile: Dockerfile
     volumes:
-      - . /var/www/html
+      - .:/var/www/html
     ports:
-      - "${PORT:-8082}:80"
+      - "8080:80"
     depends_on:
       - db
 
@@ -19,7 +20,7 @@ services:
       MYSQL_USER: esport
       MYSQL_PASSWORD: esport123
     ports:
-      - "3307:3306"
+      - "3306:3306"
     volumes:
       - db_data:/var/lib/mysql
 
