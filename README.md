@@ -56,12 +56,6 @@ Aller sur : [http://localhost:8082]
 
 ## Déploiement
 
-Vous pouvez héberger le site avec :
-
-- Railway.app (recommandé)
-- Render.com
-- Hébergement PHP/MySQL
-
 ---
 
 ## Documentation incluse
